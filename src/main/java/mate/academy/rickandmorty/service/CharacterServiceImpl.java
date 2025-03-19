@@ -2,7 +2,6 @@ package mate.academy.rickandmorty.service;
 
 import java.util.List;
 import java.util.Random;
-
 import lombok.RequiredArgsConstructor;
 import mate.academy.rickandmorty.dto.CharacterDto;
 import mate.academy.rickandmorty.exception.CharacterNotFoundException;
