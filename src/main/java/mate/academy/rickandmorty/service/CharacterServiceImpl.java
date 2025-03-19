@@ -2,6 +2,7 @@ package mate.academy.rickandmorty.service;
 
 import java.util.List;
 import java.util.Random;
+
 import lombok.RequiredArgsConstructor;
 import mate.academy.rickandmorty.dto.CharacterDto;
 import mate.academy.rickandmorty.exception.CharacterNotFoundException;
@@ -32,7 +33,7 @@ public class CharacterServiceImpl implements CharacterService {
 
     @Override
     public CharacterDto getRandomCharacter() {
-        long id = new Random().nextLong(characterRepository.count());
+        long id = new Random().nextLong(characterRepository.count()) + 1;
         return characterMapper.toDto(getCharacterById(id));
     }
 }
